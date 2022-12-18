@@ -1,0 +1,41 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SkyWars", "GrapeTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Teleport")
+Section:NewButton("Lobby", "Teleport to Lobby", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.0232149698, 267.999908, -0.180742636, 0.0111134471, 4.5047976e-08, -0.99993825, -6.41355768e-08, 1, 4.43379484e-08, 0.99993825, 6.36388648e-08, 0.0111134471)
+end)
+Section:NewButton("Shop", "Teleport to Shop", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(48.4301987, 263.999908, -0.595588028, -7.1395327e-08, 9.05551403e-08, -1, 1.69386496e-08, 1, 9.05551403e-08, 1, -1.69386443e-08, -7.1395327e-08)
+end)
+Section:NewButton("Game Store", "Teleport to Game Store", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-48.421608, 263.999908, -0.149991661, -3.44095525e-08, -5.58426265e-08, 1, 2.84953288e-08, 1, 5.58426265e-08, -1, 2.84953305e-08, -3.44095525e-08)
+end)
+Section:NewButton("Vip", "Teleport to Vip", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.454983503, 263.999908, -61.5354118, 1, -4.77985429e-09, 0.000187846483, 4.78035656e-09, 1, -2.67367173e-09, -0.000187846483, 2.67456968e-09, 1)
+end)
+Section:NewButton("Mega Vip", "Teleport to Mega Vip", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.0901529118, 263.999908, 63.8419037, -0.999927878, 3.17306323e-08, 0.0120094474, 3.13377697e-08, 1, -3.29012124e-08, -0.0120094474, -3.25224931e-08, -0.999927878)
+end)
+Section:NewButton("Middle Island", "Teleport to Middle Island", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0.116908535, 168.999878, -4.44672871, -1, 1.50528194e-08, -1.22527368e-07, 1.50528248e-08, 1, -4.51264945e-08, 1.22527368e-07, -4.51264981e-08, -1)
+end)
+local Section = Tab:NewSection("ByPass")
+Section:NewButton("ByPass AntiCheat", "Remove AntiCheat", function()
+game:GetService("Players").LocalPlayer.PlayerGui.Extra:Destroy()
+end)
+local Tab = Window:NewTab("Players")
+local Section = Tab:NewSection("Heal")
+Section:NewButton("Heal (Only 1 Times) ", "Heal", function()
+    local PX = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X
+    local PY = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y
+    local PZ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.5196571, 264.999908, 60.8813934, 0.0296533611, -1.07878515e-08, 0.999560237, -1.02417395e-07, 1, 1.38309533e-08, -0.999560237, -1.02782487e-07, 0.0296533611)
+    wait(0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PX,PY+5,PZ)
+
+end)
+local Tab = Window:NewTab("Buy")
+
+
