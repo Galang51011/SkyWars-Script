@@ -25,8 +25,8 @@ Section:NewButton("ByPass AntiCheat", "Remove AntiCheat", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Extra:Destroy()
 end)
 local Tab = Window:NewTab("Players")
-local Section = Tab:NewSection("Heal")
-Section:NewButton("Heal (Only 1 Times) ", "Heal", function()
+local Section = Tab:NewSection("Armro")
+Section:NewButton("Helm Diamond", "Equip Helm", function()
     local PX = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X
     local PY = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y
     local PZ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z
@@ -36,6 +36,37 @@ Section:NewButton("Heal (Only 1 Times) ", "Heal", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PX,PY+5,PZ)
 
 end)
+Section:NewButton("Helm Ruby", "Equip Helm", function()
+    local PX = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X
+    local PY = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y
+    local PZ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.9151392, 262.999908, 67.0104065, 0.0189667307, 4.93791887e-08, 0.999820113, 3.6074205e-08, 1, -5.00724084e-08, -0.999820113, 3.70174256e-08, 0.0189667307)
+    wait(0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PX,PY+5,PZ)
+
+end)
+Section:NewButton("Helm Emerald", "Equip Helm", function()
+    local PX = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X
+    local PY = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y
+    local PZ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.8086128, 262.999908, 72.6743011, 0.0188907515, -1.05167164e-09, 0.999821544, 7.17478343e-08, 1, -3.03753134e-10, -0.999821544, 7.17407715e-08, 0.0188907515)
+    wait(0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PX,PY+5,PZ)
+
+end)
+Section:NewButton("Helm Obsidian ", "Equip Helm", function()
+    local PX = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.X
+    local PY = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Y
+    local PZ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.Z
+    
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11.690999, 262.999908, 78.4039536, 0.0189734157, 9.63641682e-08, 0.999819994, -6.00958572e-08, 1, -9.52410915e-08, -0.999819994, -5.82779904e-08, 0.0189734157)
+    wait(0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(PX,PY+5,PZ)
+
+end)
+
 local Tab = Window:NewTab("Buy")
 
 
